@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Book(name, author, noOfPages,status){
+            this.name = name;
+            this.author = author;
+            this.noOfPages = noOfPages;
+            this.status = status;
+            this.info = function(){
+                return (this.name +" "+ 'by'+ " " + this.author + " " + this.noOfPages + " " +this.status)
+            }
+        }
+        const book1 = new Book('The Spiritual Warfare',
+            'Keneth Hagin',
+            '400pages',
+            "Reading"
+        )
+        console.log(book1.info());
+    </script>
+</body>
+</html>
